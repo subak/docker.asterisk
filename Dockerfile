@@ -31,7 +31,7 @@ RUN apt-get update \
  libspeexdsp-dev
 
 
-ARG ASTERISK_VERSION=13.12.2
+ARG ASTERISK_VERSION=13.13.1
 ENV PKG_NAME ${ASTERISK_VERSION}
 
 WORKDIR /usr/src
