@@ -22,9 +22,16 @@ RUN apt-get update \
  libvorbis-dev \
  curl \
  ca-certificates \
- openssl
+ openssl \
+ unixODBC \
+ unixODBC-dev \
+ libmyodbc \
+ speex \
+ libspeex-dev \
+ libspeexdsp-dev
 
-ARG ASTERISK_VERSION=13.12.1
+
+ARG ASTERISK_VERSION=13.12.2
 ENV PKG_NAME ${ASTERISK_VERSION}
 
 WORKDIR /usr/src
